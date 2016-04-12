@@ -12,6 +12,12 @@ const common = {
   entry: {
     app: PATHS.app
   },
+  // Add resolve.extensions
+  // '' is needed to allow imports without an extension.
+  // Note the .'s before extensions as it will fail to match without!
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   output: {
     path: PATHS.build,
     filename: 'bundle.js'
@@ -25,6 +31,16 @@ const common = {
         // Include accepts either a path or an array o paths
         //if include is not set, Webpack will traverse all files within
         // the base directory. This will hurt performance
+        include: PATHS.app
+      },
+      // Setup JSX. This accepts js too thanks to RegExp
+      {
+        test: /\.jsx?$/,
+        // Enable caching for improved performance during development
+        // It uses default OS Directory by default.
+        loaders: ['babel?cacheDirectory'],
+        // Parse only files! Without this it will go through entire project
+        // In addition to being slow, that will most likely result in an error
         include: PATHS.app
       }
     ]
