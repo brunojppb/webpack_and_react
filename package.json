@@ -1,10 +1,12 @@
 {
-  "name": "webpack",
+  "name": "webpack_and_react",
   "version": "1.0.0",
   "description": "Looking for a good resource to learn React.js, I have found this great book: [SurviveJS]. From the start point, it teaches you what is [Webpack] and how it plays with your Javascript code. It also shows a great comparison among the most used Module Mundlers.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --content-base build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/brunojppb/webpack_and_react/issues"
   },
-  "homepage": "https://github.com/brunojppb/webpack_and_react#readme"
+  "homepage": "https://github.com/brunojppb/webpack_and_react#readme",
+  "devDependencies": {
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
