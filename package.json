@@ -1,0 +1,19 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "Looking for a good resource to learn React.js, I have found this great book: [SurviveJS]. From the start point, it teaches you what is [Webpack] and how it plays with your Javascript code. It also shows a great comparison among the most used Module Mundlers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunojppb/webpack_and_react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunojppb/webpack_and_react/issues"
+  },
+  "homepage": "https://github.com/brunojppb/webpack_and_react#readme"
+}
