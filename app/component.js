@@ -1,5 +1,5 @@
 module.exports = function(){
   var element = document.createElement('h1');
-  element.innerHTML = 'Hello Bruno!';
+  element.innerHTML = 'Hello My Friend!';
   return element;
 };
