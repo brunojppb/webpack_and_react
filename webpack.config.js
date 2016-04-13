@@ -10,6 +10,9 @@ const PATHS = {
   build: path.join(__dirname, 'build')
 };
 
+// Set the the BABEL_ENV var to pass the context env to .babelrc
+process.env.BABEL_ENV = TARGET;
+
 const common = {
   entry: {
     app: PATHS.app
